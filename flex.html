@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        .wrap{
+          height: auto;
+          width: auto;
+          display: flex;
+        }
+        .face1,
+        .face2,
+        .face3,
+        .face4,
+        .face5,
+        .face6 {
+            height: 150px;
+            width: 150px;
+            margin: 30px;
+            background: rgba(126, 126, 126, 0.2);
+            border-radius: 20px;
+            box-shadow: 5px 5px 8px black;
+            display: flex;
+        }
+
+        .item {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        .face1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .face2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .face2 .item:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .face3 {
+            display: flex;
+        }
+
+        .face3 .item:nth-child(2) {
+            align-self: center;
+        }
+
+        .face3 .item:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .face4 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        .face4 .col {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .face5 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        .face5 .col {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .face5 .col:nth-child(2) {
+            justify-content: center;
+        }
+
+        .face6 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        .face6 .col {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="face1">
+            <div class="item">
+            </div>
+        </div>
+        <div class="face2">
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+        </div>
+        <div class="face3">
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+        </div>
+
+        <div class="face4">
+            <div class="col">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+        </div>
+        <div class="face5">
+            <div class="col">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+        </div>
+
+        <div class="face6">
+            <div class="col">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
